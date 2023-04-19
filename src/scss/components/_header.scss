@@ -1,0 +1,45 @@
+.header {
+    margin-bottom: 224px;
+}
+
+.header__container {
+}
+
+.header__about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.header__name {
+    font-size: 47.3392px;
+    font-weight: bold;
+}
+
+.header__about {
+    font-size: 18px;
+}
+
+.header__lang {
+    font-size: 16px;
+    font-weight: bold;
+    color: $primaryLightColor;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.header__lang-link {
+    
+}
+.header__lang-link--selected {
+    color: $primaryColor;
+}
+
+.header__picture-wrapper {
+    display: flex;
+}
+
+.header__picture {
+    
+}

@@ -1,0 +1,132 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/main.css")
+        title Document
+    body
+        nav.nav
+            .nav__container.container
+                ul.nav__list
+                    li.nav__item
+                        a.nav__item-link.nav__item-link--selected(href="#") Home
+                    li.nav__item
+                        a.nav__item-link(href="#") About me
+                    li.nav__item
+                        a.nav__item-link(href="#") Skills
+                    li.nav__item
+                        a.nav__item-link(href="#") Portfolio
+                    li.nav__item
+                        a.nav__item-link(href="#") Contacts
+
+        header.header
+            .header__container.container
+                .header__about-wrapper
+                    h1.header__name 
+                        | Denis #[br]
+                        | Novik
+                    p.header__about
+                        | UX | UI designer #[br]
+                        | 24 years old, Minsk
+                    p.header__lang
+                        a.header__lang-link.header__lang-link--selected(href="#") RU
+                        |  | 
+                        a.header__lang-link(href="#") ENG
+                .header__picture-wrapper
+                    img.header__picture(src="img/pictures/avatar.jpg", alt="")
+
+        main.content
+            .content__container.container
+                section.content__about_me-section
+                    h1.content__about_me-title.content__section-title About me
+                    p.content__about_me-descr.content__section-descr
+                        | Hi, I'm Denis – UX/UI designer from Minsk. #[br]
+                        | I'm interested in design and everything connected with it. #[br]
+                        | #[br]
+                        | #[br]
+                        | I'm studying at courses "Web and mobile design #[br]
+                        | interfaces" in IT-Academy.
+                        | #[br]
+                        | #[br]
+                        | Ready to implement excellent projects #[br]
+                        | with wonderful people.
+                section.content__skills-section
+                    h1.content__skills-title.content__section-title Skills 
+                    p.content__skills-descr.content__section-descr I work in such programs as
+                    //- img/icons/adobe-illustrator.svg
+                    //- img/icons/adobe-after-effects.svg
+                    //- img/icons/figma.svg
+                    .content__skills
+                        .content__skill
+                            img.content__skill-icon(src="img/icons/adobe-photoshop.svg", alt="")
+                            p.content__skill-name Adobe Photoshop
+                            .content__skill-rating
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-gray.svg", alt="")
+                        .content__skill
+                            img.content__skill-icon(src="img/icons/adobe-illustrator.svg", alt="")
+                            p.content__skill-name Adobe Photoshop
+                            .content__skill-rating
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-gray.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-gray.svg", alt="")
+                        .content__skill
+                            img.content__skill-icon(src="img/icons/adobe-after-effects.svg", alt="")
+                            p.content__skill-name Adobe Photoshop
+                            .content__skill-rating
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-gray.svg", alt="")
+                        .content__skill
+                            img.content__skill-icon(src="img/icons/figma.svg", alt="")
+                            p.content__skill-name Adobe Photoshop
+                            .content__skill-rating
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
+                               img.content__skill-rating-icon(src="img/icons/star-gray.svg", alt="")
+
+                section.content__portfolio-section
+                    h1.content__portfolio-title.content__section-title Portfolio 
+                    //- img/pictures/portfolio-online-fashion-store-homepage.jpg
+                    //- img/pictures/portfolio-reebok-store-concept.jpg
+                    //- img/pictures/portfolio-braun-landing-page-concept.jpg
+                    .content__portfolio-items 
+                        .content__portfolio
+                            img.content__portfolio-img(src="img/pictures/portfolio-online-fashion-store-homepage.jpg", alt="")
+                            a.content__portfolio-descr.content__section-descr(href="#") Online fashion store - Homepage
+                        .content__portfolio
+                            img.content__portfolio-img(src="img/pictures/portfolio-reebok-store-concept.jpg", alt="")
+                            a.content__portfolio-descr.content__section-descr(href="#") Online fashion store - Homepage
+                        .content__portfolio
+                            img.content__portfolio-img(src="img/pictures/portfolio-braun-landing-page-concept.jpg", alt="")
+                            a.content__portfolio-descr.content__section-descr(href="#") Online fashion store - Homepage
+
+                section.content__contacts-section 
+                    h1.content__contacts-title.content__section-title Contacts
+                    p.content__contacts-descr.content__section-descr 
+                        | Want to know more or just chat?#[br]
+                        | You are welcome!
+                    button.content__contacts-send_message-btn(type="submit") Send message
+                    .content__contacts
+                        a.content__contact-link(href="#")
+                            img.content__contact-icon(src="img/icons/linkedin.svg", alt="LinkedIn")
+                        a.content__contact-link(href="#")
+                            img.content__contact-icon(src="img/icons/Instagram.svg", alt="Instagram")
+                        a.content__contact-link(href="#")
+                            img.content__contact-icon(src="img/icons/behance.svg", alt="Behance")
+                        a.content__contact-link(href="#")
+                            img.content__contact-icon(src="img/icons/dribble.svg", alt="Dribble")
+                    p.content__contacts-like_me_on
+                        | Like me on #[br]
+                        | LinkedIn, Instagram, Behance, Dribble

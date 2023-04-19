@@ -1,0 +1,23 @@
+@import 'fonts/Gilroy';
+@import 'base/reset';
+@import 'base/colors';
+
+* {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    line-height: 1.2;
+    color: $primaryColor;
+}
+
+img {
+    width: auto;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+@import 'components/nav';
+@import 'components/header';
+@import 'components/content';

@@ -1,0 +1,29 @@
+.nav {
+    margin-bottom: 40px;
+}
+
+.nav__container {
+    border-bottom: 1px solid $primaryLightColor;
+}
+
+.nav__list {
+    flex: 1;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+
+.nav__item {
+    
+}
+
+.nav__item-link {
+    color: $primaryLightColor;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav__item-link--selected {
+    color:$primaryColor;
+}
