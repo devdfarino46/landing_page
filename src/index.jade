@@ -13,13 +13,13 @@ html(lang="ru")
                     li.nav__item
                         a.nav__item-link.nav__item-link--selected(href="#") Home
                     li.nav__item
-                        a.nav__item-link(href="#") About me
+                        a.nav__item-link(href="#about_me") About me
                     li.nav__item
-                        a.nav__item-link(href="#") Skills
+                        a.nav__item-link(href="#skills") Skills
                     li.nav__item
-                        a.nav__item-link(href="#") Portfolio
+                        a.nav__item-link(href="#portfolio") Portfolio
                     li.nav__item
-                        a.nav__item-link(href="#") Contacts
+                        a.nav__item-link(href="#contacts") Contacts
 
         header.header
             .header__container.container
@@ -31,15 +31,15 @@ html(lang="ru")
                         | UX | UI designer #[br]
                         | 24 years old, Minsk
                     p.header__lang
-                        a.header__lang-link.header__lang-link--selected(href="#") RU
+                        a.header__lang-link(href="#") RU
                         |  | 
-                        a.header__lang-link(href="#") ENG
+                        a.header__lang-link.header__lang-link--selected(href="#") ENG
                 .header__picture-wrapper
                     img.header__picture(src="img/pictures/avatar.jpg", alt="")
 
         main.content
             .content__container.container
-                section.content__about_me-section
+                section.content__about_me-section#about_me 
                     h1.content__about_me-title.content__section-title About me
                     p.content__about_me-descr.content__section-descr
                         | Hi, I'm Denis – UX/UI designer from Minsk. #[br]
@@ -52,12 +52,10 @@ html(lang="ru")
                         | #[br]
                         | Ready to implement excellent projects #[br]
                         | with wonderful people.
-                section.content__skills-section
+
+                section.content__skills-section#skills
                     h1.content__skills-title.content__section-title Skills 
                     p.content__skills-descr.content__section-descr I work in such programs as
-                    //- img/icons/adobe-illustrator.svg
-                    //- img/icons/adobe-after-effects.svg
-                    //- img/icons/figma.svg
                     .content__skills
                         .content__skill
                             img.content__skill-icon(src="img/icons/adobe-photoshop.svg", alt="")
@@ -96,11 +94,8 @@ html(lang="ru")
                                img.content__skill-rating-icon(src="img/icons/star-black.svg", alt="")
                                img.content__skill-rating-icon(src="img/icons/star-gray.svg", alt="")
 
-                section.content__portfolio-section
-                    h1.content__portfolio-title.content__section-title Portfolio 
-                    //- img/pictures/portfolio-online-fashion-store-homepage.jpg
-                    //- img/pictures/portfolio-reebok-store-concept.jpg
-                    //- img/pictures/portfolio-braun-landing-page-concept.jpg
+                section.content__portfolio-section#portfolio
+                    h1.content__portfolio-title.content__section-title Portfolio
                     .content__portfolio-items 
                         .content__portfolio
                             img.content__portfolio-img(src="img/pictures/portfolio-online-fashion-store-homepage.jpg", alt="")
@@ -112,12 +107,12 @@ html(lang="ru")
                             img.content__portfolio-img(src="img/pictures/portfolio-braun-landing-page-concept.jpg", alt="")
                             a.content__portfolio-descr.content__section-descr(href="#") Online fashion store - Homepage
 
-                section.content__contacts-section 
+                section.content__contacts-section#contacts
                     h1.content__contacts-title.content__section-title Contacts
                     p.content__contacts-descr.content__section-descr 
                         | Want to know more or just chat?#[br]
                         | You are welcome!
-                    button.content__contacts-send_message-btn(type="submit") Send message
+                    a.content__contacts-send_message-link(href="#") Send message
                     .content__contacts
                         a.content__contact-link(href="#")
                             img.content__contact-icon(src="img/icons/linkedin.svg", alt="LinkedIn")
