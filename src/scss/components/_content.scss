@@ -65,7 +65,7 @@
 }
 
 .content__skill-rating {
-    
+    margin-top: auto;
 }
 
 .content__skill-rating-icon {
@@ -99,7 +99,9 @@
 .content__portfolio-descr {
     text-decoration: underline;
 }
-
+.content__portfolio-descr:hover {
+    text-decoration: none;
+}
 
 // Contacts Section
 .content__contacts-section {
@@ -127,9 +129,16 @@
     background-color: $primaryColor;
     border-radius: 100px;
 }
+.content__contacts-send_message-link:hover {
+    background-color: white;
+    color: $primaryColor;
+    border: 2px solid $primaryColor;
+    padding: 8px 27px;
+}
 
 .content__contacts {
     margin-bottom: 46px;
+    display: flex;
 }
 
 .content__contact-link {
