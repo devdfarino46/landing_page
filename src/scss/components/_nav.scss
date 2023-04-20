@@ -1,5 +1,7 @@
 .nav {
-    margin-bottom: 40px;
+    position: fixed;
+    left: 0; right: 0; top: 0;
+    z-index: 1;
 }
 
 .nav__container {
@@ -29,4 +31,24 @@
 }
 .nav__item-link:hover {
     color: $primaryColor;
+}
+
+
+.nav--scrolled {
+    background-color: $primaryColor;
+}
+
+.nav--scrolled .nav__container {
+    border: none;
+}
+
+.nav--scrolled .nav__item-link {
+    color: white;
+    font-weight: 600;
+}
+.nav--scrolled .nav__item-link--selected {
+    font-weight: bold;
+}
+.nav--scrolled .nav__item-link:hover {
+    font-weight: bold;
 }

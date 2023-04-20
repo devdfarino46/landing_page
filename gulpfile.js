@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const jade = require('gulp-jade');
 const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
+const babel = require('gulp-babel');
 
 
 function browsersync() {
@@ -18,6 +19,7 @@ function browsersync() {
 
     watch("src/**/*.jade", templates);
     watch("src/scss/**/*.scss", styles);
+    watch("src/js/**/*.js", scripts);
 }
 
 function styles() {
@@ -42,6 +44,20 @@ function templates() {
         .pipe(browserSync.stream());
 }
 
+function scripts() {
+    return src("src/js/**/*.js")
+        .pipe(babel({
+            presets: [
+                "@babel/preset-env",
+                {
+                    "compact": true,
+                }
+            ]
+        }))
+        .pipe(dest('dist/js/'))
+        .pipe(browserSync.stream());
+}
+
 function optimizeImages() {
     return src("dist/img/**/*")
         .pipe(imagemin({verbose: true}))
@@ -50,6 +66,7 @@ function optimizeImages() {
 
 exports.styles = series(styles);
 exports.templates = series(templates);
+exports.scripts = series(scripts);
 
 exports.optimizeImages = series(optimizeImages);
-exports.default = series(styles, templates, browsersync);
+exports.default = series(styles, templates, scripts, browsersync);
