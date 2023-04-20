@@ -1,0 +1,121 @@
+@media screen and (max-width: 730px) {
+    .nav {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: white;
+        transition: none;
+        padding-top: 65px;
+        padding-bottom: 57px;
+        display: flex;
+    }
+
+    .nav__container {
+        position: relative;
+        border: none;
+        flex: 1;
+    }
+
+    .nav__close {
+        position: absolute;
+        right: 0;
+        display: inline;
+        background: none;
+        border: none;
+    }
+
+    .nav__close-icon {
+        width: 22px;
+    }
+
+    .nav__list {
+        height: unset;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .nav__item {
+        margin-bottom: 68px;
+    }
+    .nav__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .nav__item-link {
+        transition: none;
+        font-size: 34px;
+    }
+
+
+    .menu {
+        display: none;
+    }
+    
+    .menu--opened {
+        display: flex;
+    }
+
+
+    .header {
+        margin-top: 65px;
+    }
+
+    .header__about-wrapper {
+        position: relative;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header__about {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .menu__btn {
+        display: inline;
+        position: absolute;
+        right: 0;
+        background: none;
+        border: none;
+    }
+
+    .menu__btn-icon {
+        width: 33px;
+    }
+
+    .header__name {
+        margin-bottom: 23px;
+    }
+
+    .header__picture-wrapper {
+        height: 478px;
+    }
+
+
+    .content__skills {
+        flex-direction: column;
+
+    }
+
+    .content__skill {
+        margin-bottom: 85px;
+    }
+    .content__skill:last-child {
+        margin-bottom: 0;
+    }
+
+    .content__contacts-section {
+        align-items: normal;
+    }
+
+    .content__contacts-send_message-link {
+        text-align: center;
+    }
+
+    .content__contacts {
+        justify-content: space-between;
+    }
+
+    .content__contact-link {
+        margin-right: 0;
+    }
+}

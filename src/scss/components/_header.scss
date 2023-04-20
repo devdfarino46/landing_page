@@ -8,7 +8,6 @@
 
 .header__about-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 50px;
 }
@@ -20,27 +19,12 @@
 
 .header__about {
     font-size: 18px;
-}
-
-.header__lang {
-    font-size: 16px;
-    font-weight: bold;
-    color: $primaryLightColor;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-}
-
-.header__lang-link {
-    
-}
-.header__lang-link--selected {
-    color: $primaryColor;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header__picture-wrapper {
-    display: flex;
-}
-
-.header__picture {
-    
+    height: 387px;
+    background-position: center;
+    background-size: cover;
 }

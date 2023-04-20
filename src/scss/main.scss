@@ -10,10 +10,6 @@
     color: $primaryColor;
 }
 
-body {
-    
-}
-
 img {
     width: auto;
 }
@@ -23,6 +19,23 @@ img {
     margin: 0 auto;
 }
 
+
+.nav__close {
+    display: none;
+}
+
+
+.menu__btn {
+    display: none;
+}
+
+
+.nav, .header, .content {
+    padding: 0 30px;
+}
+
 @import 'components/nav';
 @import 'components/header';
 @import 'components/content';
+
+@import 'media-queries/smartphone'

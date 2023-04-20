@@ -7,35 +7,34 @@ html(lang="ru")
         link(rel="stylesheet", href="css/main.css")
         title Document
     body#home
-        nav.nav
+        nav.nav.menu
             .nav__container.container
+                button.nav__close(onclick="closeMenu()")
+                    img.nav__close-icon(src="img/icons/close.svg", alt="")
                 ul.nav__list
                     li.nav__item
-                        a.nav__item-link.nav__item-link--selected(href="#home") Home
+                        a.nav__item-link.nav__item-link--selected(href="#home" onclick="closeMenu()") Home
                     li.nav__item
-                        a.nav__item-link(href="#about_me") About me
+                        a.nav__item-link(href="#about_me" onclick="closeMenu()") About me
                     li.nav__item
-                        a.nav__item-link(href="#skills") Skills
+                        a.nav__item-link(href="#skills" onclick="closeMenu()") Skills
                     li.nav__item
-                        a.nav__item-link(href="#portfolio") Portfolio
+                        a.nav__item-link(href="#portfolio" onclick="closeMenu()") Portfolio
                     li.nav__item
-                        a.nav__item-link(href="#contacts") Contacts
+                        a.nav__item-link(href="#contacts" onclick="closeMenu()") Contacts
 
         header.header
             .header__container.container
                 .header__about-wrapper
+                    button.menu__btn(onclick="openMenu()")
+                        img.menu__btn-icon(src="img/icons/menu.svg", alt="Open menu")
                     h1.header__name 
                         | Denis #[br]
                         | Novik
                     p.header__about
                         | UX | UI designer #[br]
                         | 24 years old, Minsk
-                    p.header__lang
-                        a.header__lang-link(href="#") RU
-                        |  | 
-                        a.header__lang-link.header__lang-link--selected(href="#") ENG
-                .header__picture-wrapper
-                    img.header__picture(src="img/pictures/avatar.jpg", alt="")
+                .header__picture-wrapper(style="background-image: url(img/pictures/avatar.jpg);")
 
         main.content
             .content__container.container
