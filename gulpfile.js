@@ -4,7 +4,8 @@ const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const jade = require('gulp-jade');
-const cleanCSS = require('gulp-clean-css')
+const cleanCSS = require('gulp-clean-css');
+const imagemin = require('gulp-imagemin');
 
 
 function browsersync() {
@@ -41,7 +42,14 @@ function templates() {
         .pipe(browserSync.stream());
 }
 
-exports.styles = series(styles);
-exports.templates = series(templates)
+function optimizeImages() {
+    return src("dist/img/**/*")
+        .pipe(imagemin({verbose: true}))
+        .pipe(dest("dist/img/"));
+}
 
+exports.styles = series(styles);
+exports.templates = series(templates);
+
+exports.optimizeImages = series(optimizeImages);
 exports.default = series(styles, templates, browsersync);
