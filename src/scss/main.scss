@@ -34,6 +34,11 @@ img {
     padding: 0 30px;
 }
 
+.home-link_here {
+    position: absolute;
+    top: 0;
+}
+
 @import 'components/nav';
 @import 'components/header';
 @import 'components/content';

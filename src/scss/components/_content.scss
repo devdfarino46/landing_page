@@ -2,6 +2,15 @@
     
 }
 
+.content__section {
+    position: relative;
+}
+
+.content__section-link_here {
+    position: absolute;
+    top: -128px;
+}
+
 .content__section-title {
     text-align: center;
     font-size: 34px;
